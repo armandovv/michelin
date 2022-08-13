@@ -1,0 +1,172 @@
+<html>
+<head>
+<title> registro familiar </title>
+<style>
+ body{margin:auto;width:100%; height 100%;
+ border:3;
+  center;}
+  label {
+    width: 200px;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'cambria';
+	color:#A04000 ;
+} 
+#registro table {
+    margin:auto;width:700px; height 600px;
+border:2px;
+background:RGB( 200 , 300 , 50, 0.30
+	)  ;
+	border: 5px solid #ccc;  
+	
+}  
+.noborder{
+color: red;
+width: 250px;
+font-size: 1rem;
+border:0;
+} 
+
+form {
+    margin: 30px auto;
+    padding: 6px;
+    border: 5px solid #ccc;
+    width: 700px;
+   
+}
+input {
+    border: 2px solid #ccc;
+    font-size: 1rem;
+    font-weight: 100;
+	
+    font-family: 'Lato';
+	
+    padding: 7px;
+}
+</style>
+<script language="javascript"type='text/javascript'>
+function mostrar(){
+  var archivo = document.getElementById("file").files[0];
+  var reader = new FileReader();
+  if (file) {
+    reader.readAsDataURL(archivo );
+    reader.onloadend = function () {
+      document.getElementById("foto").src = reader.result;
+    }
+  }
+}
+
+function validar(){
+var miCampoTexto = document.getElementById("nn").value;
+ //la condición
+ if (miCampoTexto.length == 0 || /^\s+$/.test(miCampoTexto)) {
+    document.getElementById("caption").value ="ingrese nombre";
+	document.getElementById("nn").focus();
+     return false;
+ }
+     var miCampoTextol = document.getElementById("aa").value;
+ //la condición
+ if (miCampoTextol.length == 0 || /^\s+$/.test(miCampoTextol)) {
+    document.getElementById("captionl").value="ingrese apellido";
+	document.getElementById("aa").focus();
+     return false;
+ }
+                  var miCampoTextonn = document.getElementById("dd").value;
+ //la condición
+ if (miCampoTextonn.length == 0 || /^\s+$/.test(miCampoTextonn)) {
+    document.getElementById("captionls").value="ingrese numero";
+	document.getElementById("dd").focus();
+     return false;
+ }
+
+                                 
+        var radio_check_val = "";
+        for (i = 0; i < document.getElementsByName('td').length; i++) 
+            if (document.getElementsByName('td')[i].checked) {
+                return true;
+                radio_check_val = document.getElementsByName('td')[i].value;        
+                    
+        }
+        else  (radio_check_val === "")
+        {
+           
+                
+    
+                                                                    document.getElementById("captionlss").value="escoja una opcion";
+        return false;
+        }
+		 var valor = document.getElementById("correo").value;
+if(valor.length == 0 || /^\s+$/.test(valor))  {
+               document.getElementById("captionles").value="indique un email valido";
+	document.getElementById("correo").focus();
+  return false;
+}  
+		
+		
+		
+		
+		
+		else{
+              return true;
+                                      document.getElementById("caption").value="";
+							                 document.getElementById("captionl").value="";
+											           document.getElementById("captionls").value="";
+													           document.getElementById("captionlss").value="";
+															   document.getElementById("captionles").value="";
+															    document.getElementById("foto").value= null;
+																    document.getElementsByName("file").value="";
+															   }
+						function elimImagen(){
+               var inputImage = document.getElementById("file");
+  inputImage.value = '';
+               document.getElementById("foto").src="";
+			  
+			                       }									   
+															   
+}
+</script>  
+
+
+                
+                               
+</head>
+<body>
+<div id="registro"><p>bienvenido<?php session_start();
+
+echo utf8_decode($_SESSION['usuario'];)?></p>
+<center><table><tr><td></td><td><label><center>FORMULARIO DE REGISTRO FAMILIAR</CENTER></label></td>
+</tr>
+<form action="registrof.php" onsubmit="return validar()" method="POST" enctype="multipart/form-data">
+<tr>
+    <td><label><center>   nombre</center></label></td>
+	                <td><input type="text" name="nom" id="nn"/><input type="text" id="caption" class="noborder" style="background-color:transparent" disabled="disabled"/></td>
+					</tr>
+					<tr>
+						      <td><label><center>apellido</center></label></td>
+							                    <td><input type="text" name="apl" id="aa"/><input type="text" id="captionl" class="noborder" style="background-color:transparent" disabled="disabled"/></td>
+												                                                </tr>
+					     <tr>
+						      <td><label><center>N. documento</center></label></td>
+							                    <td><input type="text" name="doc" id="dd"/><input type="text" id="captionls" class="noborder" style="background-color:transparent" disabled="disabled"/></td>
+												                                                </tr>
+																								
+	             <tr>
+				      <td><label> <center>tipo documento</center></label></td><td><input type="radio" name="td" id="c"value="CC">CC <br>
+					                                   <input type="radio" name="td" id="c" value="TI">TI <input type="text" id="captionlss" class="noborder" style="background-color:transparent" disabled="disabled"/><br>
+													     <input type="radio" name="td" id="c" value="CE">CE <br></td>
+														      </tr>
+			<tr><td><label><center>correo</td><td></center></label><input type="email" name="emai" id="correo"/><input type="text" id="captionles" class="noborder" style="background-color:transparent" disabled="disabled"/></td>
+           </tr>			
+				<tr>
+                    <td><label><center>foto</center></label></td><td><img id="foto" name ="im" id="foto" height=200 width=200 /><button id="del" style="border:0"  onclick="elimImagen();"><img src="../familia/img/borrar.png" width="30" height="30"/></button><br>
+<input type="file" required name="file" id="file" accept="image/*" onchange="mostrar()">
+</td>
+   </tr>
+         <tr> <td></td><td> <input type="submit" style="width:155; background-color:green" value="enviar"><input type="reset" style="width:155; background-color:red" value="nuevo registro"></form></td>
+          </tr>
+<a href="buscar registro.html">	buscar registro</a>	 <a href="loginf.html">	salir</a> 
+   </table></center>
+   </div>
+</body>				
+</html>
