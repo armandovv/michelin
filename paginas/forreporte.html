@@ -1,0 +1,160 @@
+<html>
+<head>
+
+<title>Reporte</title>
+<link type="text/css" href="/michelin/css/administrativo.css" rel="stylesheet"/>
+     <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <div id="reporte">
+          <center><img src="/michelin/imagenes/calificaciones.png" width="90%" height="110"><br/><br/>
+		  
+		  <center><table width="100%"><tr><td>
+             <form method="POST" action="/michelin/php/reportes/registrar_reporte.php" oninput="definitiva.value=(parseInt(valor1.value)+parseInt(valor2.value)+parseInt(valor3.value))/3">
+                   <center><table border="2" cellpadding="0" cellspacing="0" width="70%" bgcolor="#78F260">
+                           <tr>
+                              <td colspan="2"><center><h3>REPORTES NOTAS</h3></center></td>
+                           </tr>
+                            <tr>
+                              <td></td><td><input type="text" name="cod_reporte" style="display:none"/></td>
+                           </tr>                          
+                            <tr>
+                               <td>CODIGO ESTUDIANTE</td><td ><input type="text" name="cod_est"/></td>
+                            </tr>
+                            <tr>
+                               <td>CODIGO DOCENTE</td><td ><input type="text" name="cod_emp"/></td>
+                            </tr>
+                             <tr>
+                               <td>CODIGO CURSO</td><td><input type="text" name="cod_curso"/></td>
+                             </tr>
+                             <tr>
+                                <td>PERIODO</td><td><input type="text" name="periodo"/></td>
+                             </tr>
+                             <tr> 
+							      <td>NOTAS DEL PERIODO</td>
+						     </tr>
+                             <tr>
+							     <td>NOTA 1<input type="number" id="valor1" value="0" name="N1"/></td>
+						    </tr>
+                             <tr> 
+							      <td>NOTA 2<input type="number" id="valor2" value="0" name="N2"/></td>
+						    </tr>
+                             <tr> 
+							     <td>NOTA 3<input type="number" id="valor3" value="0" name="N3"/></td>
+						     </tr>
+							 <tr> 
+							      <td>DEFINITIVA</td>
+						     </tr>	
+							 <tr> 
+							      <td><input type="number" name="definitiva" for="valor1 valor2 valor3"/></td>
+						     </tr>	
+                             <tr> 
+							     <td colspan="10" rowspan="5">
+								 <center>  
+								        <button type="submit"><img src="/michelin/imagenes/a.png" width="42" height="42" style="vertical-align:middle">ENVIAR</button>
+	                                   <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle">LIMPIAR</button>
+									   
+								</center></td>
+						    </tr>
+                  </table></center>
+             </form>
+			 
+			 </td>
+			 <td>
+			 
+			 <form method="POST" action="/michelin/php/reportes/modificar_reporte.php" oninput="definitiva.value=(parseInt(valor1.value)+parseInt(valor2.value)+parseInt(valor3.value))/3">
+                   <center><table border="2" cellpadding="0" cellspacing="0" width="70%" bgcolor="#78F260">
+                           <tr>
+                              <td colspan="2"><center><h3>MODIFICAR</h3></center></td>
+                           </tr>
+                            <tr>
+                              <td>CODIGO NOTA</td><td><input type="text" name="cod_reporte" required placeholder="digite las horas"/></td>
+                           </tr>                          
+                            <tr>
+                               <td>CODIGO ESTUDIANTE</td><td ><input type="text" name="cod_est" required placeholder="digite las horas"/></td>
+                            </tr>
+                            <tr>
+                               <td>CODIGO DOCENTE</td><td ><input type="text" name="cod_emp" required placeholder="digite las horas"/></td>
+                            </tr>
+                             <tr>
+                               <td>CODIGO CURSO</td><td><input type="text" name="cod_curso" required placeholder="digite las horas"/></td>
+                             </tr>
+                             <tr>
+                                <td>PERIODO</td><td><input type="text" name="periodo" required placeholder="digite las horas"/></td>
+                             </tr>
+                             <tr> 
+							      <td>NOTAS DEL PERIODO</td>
+						     </tr>
+                             <tr>
+							     <td>NOTA 1<input type="number" id="valor1" value="0" name="N1" required placeholder="digite las horas"/></td>
+						    </tr>
+                             <tr> 
+							      <td>NOTA 2<input type="number" id="valor2" value="0" name="N2" required placeholder="digite las horas"/></td>
+						    </tr>
+                             <tr> 
+							     <td>NOTA 3<input type="number" id="valor3" value="0" name="N3" required placeholder="digite las horas"/></td>
+						     </tr>
+							 <tr> 
+							      <td>DEFINITIVA</td>
+						     </tr>	
+							 <tr> 
+							      <td><input type="number" name="definitiva" for="valor1 valor2 valor3" required placeholder="digite las horas"/></td>
+						     </tr>	
+                             <tr> 
+							     <td colspan="10" rowspan="5">
+								 <center>  
+								        <button type="submit"><img src="/michelin/imagenes/a.png" width="42" height="42" style="vertical-align:middle">ENVIAR</button>
+	                                   <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle">LIMPIAR</button>
+									   
+								</center></td>
+						    </tr>
+                  </table></center>
+             </form>
+			 
+			 </td></tr></table></center>
+        
+		<table border="2" bgcolor="#78F260"><tr><td>
+		
+        <center><form method="POST" action="/michelin/php/reportes/mostrar_reporte.php">
+	    <button type="submit"><img src="/michelin/imagenes/d.png" width="42" height="42" style="vertical-align:middle"/>NOTAS REGISTRADAS</button>
+		</form>			 
+		<form method="POST" action="/michelin/php/reportes/borrar_reporte.php">
+		<input type="text" name="cod_reporte" required placeholder="eliminar nota"/>
+	    <button type="submit"><strong>SUPR</strong>&nbsp<img src="/michelin/imagenes/eliminar.png" width="42" height="42" style="vertical-align:middle"/></button>
+		<button type="reset"><img src="/michelin/imagenes/borrar.png" width="" height="42" style="vertical-align:middle"/></button>
+		</form>
+		<form method="POST" action="/michelin/php/reportes/mostrar_cod_reporte.php">		
+		<input type="text" name="cod_reporte" required placeholder="digite codigo nota"/>	
+		<button type="submit"><strong>BUSCAR</strong>&nbsp&nbsp<img src="/michelin/imagenes/ver.jpg" width="42" height="42" style="vertical-align:middle"/></button>
+		<button type="reset"><img src="/michelin/imagenes/borrar.png" width="" height="42" style="vertical-align:middle"/></button>
+		</form></center>
+		
+		</td>
+		<td>
+		
+
+		<center><table border="0"><tr>
+		<form action="/michelin/php/empleados/ver_nomina.php" method="POST">
+	
+        <legend  style="font-size: 18pt"><b>VER NOMINA</b></legend>
+		<tr><td><label style="font-size: 14pt"><b>DOCUMENTO: </b></label></td>
+			<td width=80> <input class="form-group has-success" style="border-radius:15px;" type="text" name="documento"/></td></tr>
+		<tr><td><label style="font-size: 14pt"><b>CODIGO: </b></label></td>
+			<td witdh=80><input class="form-group has-success" style="border-radius:15px;" type="text" name="cod_emp"/></td></tr>
+		<tr>
+			<td width=80 align=center><button type="submit"><img src="/michelin/imagenes/tribilin.jpg" width="42" height="42" style="vertical-align:middle">enviar</button></td>
+			<td><button type="reset"><img src="/michelin/imagenes/f.png" width="42" height="42" style="vertical-align:middle">limpiar</button></td>
+			</tr></tr></table>
+		</form>
+		</td></tr></table></center>
+
+<center><button type="submit" onclick='history.go(-1);'><img src="/michelin/imagenes/c.png" width="42" height="42" style="vertical-align:middle">ATRAS</button></center>
+		</div>
+		
+</form>
+</body>
+</html>
+
+            

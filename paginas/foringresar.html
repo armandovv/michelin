@@ -1,0 +1,70 @@
+<html>
+<head>
+     
+<title>ADMINISTRATIVO</title>
+
+<link type="text/css" href="/michelin/css/administrativo.css" rel="stylesheet"/>
+     <meta charset="UTF-8">
+	 
+</head>
+    <body>
+
+<div id="ingresar">
+	  
+	  <br/><center><img src="/michelin/imagenes/sistema.png"/><br/><br/>
+	  	  
+	   
+	   <form action="/michelin/php/administrativo/passadmin.php" method="POST">
+
+		<table border="0">
+		
+		<legend  style="font-size: 18pt"><b>ADMINISTRATIVO</b></legend>
+
+		<tr><td><label style="font-size: 14pt"><b>USUARIO: </b></label></td>
+			<td width=80> <input class="form-group has-success" style="border-radius:15px;" type="text" name="usuario"/></td></tr>
+		<tr><td><label style="font-size: 14pt"><b>CONTRASEÑA: </b></label></td>
+			<td witdh=80><input class="form-group has-success" style="border-radius:15px;" type="password" name="password"/></td></tr>
+		<tr>
+			<td width=80 align=center><button type="submit"><img src="/michelin/imagenes/tribilin.jpg" width="42" height="42" style="vertical-align:middle">enviar</button></td>
+			<td><button type="reset"><img src="/michelin/imagenes/f.png" width="42" height="42" style="vertical-align:middle">limpiar</button></td>
+			</tr></tr></table>
+		</form>
+		
+		<form action="/michelin/php/reportes/passempleados.php" method="POST">
+
+		<table border="0">
+		
+		<legend  style="font-size: 18pt"><b>EMPLEADOS</b></legend>
+
+		<tr><td><label style="font-size: 14pt"><b>USUARIO: </b></label></td>
+			<td width=80> <input class="form-group has-success" style="border-radius:15px;" type="text" name="usuario"/></td></tr>
+		<tr><td><label style="font-size: 14pt"><b>CONTRASEÑA: </b></label></td>
+			<td witdh=80><input class="form-group has-success" style="border-radius:15px;" type="password" name="password"/></td></tr>
+		<tr>
+			<td width=80 align=center><button type="submit"><img src="/michelin/imagenes/tribilin.jpg" width="42" height="42" style="vertical-align:middle">enviar</button></td>
+			<td><button type="reset"><img src="/michelin/imagenes/f.png" width="42" height="42" style="vertical-align:middle">limpiar</button></td>
+			</tr></tr></table>
+		</form>
+		
+		<form action="/michelin/php/estudiantes/passestudiantes.php" method="POST">
+
+		<table border="0">
+		
+		<legend  style="font-size: 18pt"><b>ESTUDIANTE</b></legend>
+
+		<tr><td><label style="font-size: 14pt"><b>USUARIO: </b></label></td>
+			<td width=80> <input class="form-group has-success" style="border-radius:15px;" type="text" name="usuario"/></td></tr>
+		<tr><td><label style="font-size: 14pt"><b>CONTRASEÑA: </b></label></td>
+			<td witdh=80><input class="form-group has-success" style="border-radius:15px;" type="password" name="password"/></td></tr>
+		<tr>
+			<td width=80 align=center><button type="submit"><img src="/michelin/imagenes/tribilin.jpg" width="42" height="42" style="vertical-align:middle">enviar</button></td>
+			<td><button type="reset"><img src="/michelin/imagenes/f.png" width="42" height="42" style="vertical-align:middle">limpiar</button></td>
+			</tr></tr></table>
+		</form>
+	             
+		   
+<center><button type="submit" onclick='history.go(-1);'><img src="/michelin/imagenes/c.png" width="42" height="42" style="vertical-align:middle">ATRAS</button></center>
+	  </div>	    
+	  
+	  </body>
+</html>

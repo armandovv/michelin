@@ -1,0 +1,33 @@
+#Cronograma {
+	background-image: radial-gradient(#F2F5A9, #F2F5A9);
+}
+
+#cronograma {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.cronograma-petina {
+	margin: 20px;
+}
+
+.cronograma-petina img{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border: 7px solid #fff;
+}
+
+/*Aqui empieza el responsive*/
+@media (min-width: 480px) {
+	.cronograma-petina {
+		width: 40%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.cronograma-petina {
+		width: auto;
+	}
+}

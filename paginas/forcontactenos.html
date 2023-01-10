@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Contactenos</title>
+
+<link type="text/css" href="/michelin/css/administrativo.css" rel="stylesheet"/>
+<meta charset="UTF-8">
+
+</head>
+<body>
+
+<div id="contactenos"><br>
+	   
+	   <center><img src="/michelin/imagenes/contactenos.png" width="90%" height="110"><br/>
+	   
+	   <div id="contactenosform">
+	   
+	   <form method="POST" action="/michelin/php/contactos/registrar_contactos.php">
+	   <center><h1>CONTACTANOS</h1></center>
+  
+  <input type="text" name="cod" style="display:none"/>   
+  <label>Nombres:</label>
+  <input type="text" name="nombres" size="45" required placeholder="digite el dato"/>
+  <br/>
+  <label>Apellidos:</label>
+  <input type="text" name="apellidos" size="45" required placeholder="digite el dato"/>
+  <br/>
+  <label>Telefono:</label>
+  <input type="text" name="telefono" size="45" required placeholder="digite el dato"/>
+  <br/>
+  <label>Correo:</label>
+  <input type="text" name="correo" size="45" required placeholder="digite el dato"/>
+  <br/>
+  <label>Curso:</label>
+  <select type="text" name="curso" size="2" multiple required placeholder="seleccione curso">
+                                           <option value="">...</option>
+                                            <option value="Parvulos">Parvulos</option>
+                                              <option value="Transicion">Transicion</option>
+                                                <option value="Pre Jardin">Pre Jardin</option>
+                                                 <option value="Jardin">Jardin</option>
+                                                   <option value="Primero">Primero</option>                                         
+                                            </select>
+  <br/>
+  <label>Comentarios:</label>
+  <textarea name="comentarios" cols="47" rows="5"></textarea> 
+  <br/><br/>
+  
+     <button type="submit"><img src="/michelin/imagenes/a.png" width="42" height="42" style="vertical-align:middle">ENVIAR</button>
+	 <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle">LIMPIAR</button>
+<br/><br/><br/>
+</form> <br/>
+
+
+		  </div></center><br/><br/>
+<center><button type="submit" onclick='history.go(-1);'><img src="/michelin/imagenes/c.png" width="42" height="42" style="vertical-align:middle">ATRAS</button></center>		  
+      </div>	 	  	   
+		  
+</body>
+</html>

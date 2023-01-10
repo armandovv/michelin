@@ -1,0 +1,58 @@
+#menu-bar {
+	display: none;
+}
+
+header label {
+	float: right; /*Poner a flotar el icono del menú*/
+	font-size: 28px;
+	margin: 6px 0; 
+	cursor: pointer; /*El cursor se vuelve manito*/
+}
+
+.menu {
+	position: absolute;
+	top: 50px; /*Para que comience desde abajo del icono del perrito*/
+	left: 0;
+	width: 100%;
+	height: 100vh; /*Ocupa siempre el 100% del alto de la ventana*/
+	background: rgba(51,51,51,0.9); /*El 0.9 es transparencia*/
+	transition: all 0.5s; /*Ver desplazamiento*/
+	transform: translateX(-100%); /*Agregar despues del menu a y menu a:hover. Va a correr el menú a la izquierda y lo desaparece*/
+}
+
+.menu a { /*Adornar el menú*/
+	display: block;
+	color: #fff;
+	width: 200px;
+	height: 50px;
+	text-decoration: none;
+	padding: 15px;
+	border-bottom: 1px solid rgba(255,255,255,0.3); /*Para que el menu se vea organizado en cuadros*/
+}
+
+.menu a:hover { /*Darle acción al menú*/
+	background: rgba(255,255,255,0.3);
+}
+
+#menu-bar:checked ~ .menu { /*Al oprimir el icono, se desplegara Para scar el signo ALT+126*/
+	transform: translateX(0%);
+}
+
+/*Desde aqui empieza el Responsive*/
+@media (min-width: 1024px) { /*Aparce desde esa resolución el menu arriba, parte superior derecha*/
+	.menu {
+		position: static;
+		width: auto;
+		height: auto;
+		transform: translateX(0%);
+		float: right;
+		display: flex;
+	}
+	.menu a {
+		border: none;
+	}
+
+	header label {
+		display: none;
+	}
+}

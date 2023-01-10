@@ -1,0 +1,41 @@
+#wrapper {
+	background-image: radial-gradient();
+	text-align: center;
+	padding: 20px;
+}
+
+#wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#wrapper .contenedor {
+	display: flex; /*Para que las imagenes estén en una sola linea*/
+	justify-content: center;
+	flex-wrap: wrap; /*Si las imagenes están en una sola linea, las ajusta al disminuir el tamaño de la pagina*/
+}       
+
+.galeria-peti {
+	margin: 20px;
+}
+
+.galeria-peti img{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border: 7px solid #fff;
+}
+
+/*Aqui empieza el responsive*/
+@media (min-width: 480px) {
+	.galeria-peti {
+		width: 40%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.galeria-peti {
+		width: auto;
+	}
+}

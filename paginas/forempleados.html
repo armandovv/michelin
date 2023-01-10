@@ -1,0 +1,122 @@
+<html>
+<head>
+<link type="text/css" href="/michelin/css/administrativo.css" rel="stylesheet"/>
+     <meta charset="UTF-8">
+<title>ESTUDIANTES</title>
+</head>
+<body>
+
+<div id="empleados">
+
+<br/><center><img src="/michelin/imagenes/empleados.png"/></center><br/><br/>
+
+              <table width="100%"><tr><td>
+              <form method="POST" action="/michelin/php/empleados/registrar_empleados.php">
+			  
+			          <center><table border="2" cellpadding="0" cellspacing="0" width="90%" bgcolor="#4A9BEC ">
+                             <tr>
+                                 <td colspan="2"><center><h3>REGISTRAR DATOS EMPLEADOS</h3></center></td>
+                             </tr>
+                             <tr>
+                                 <td></td><td><input type="text" name="cod_emp" size="45" style="display:none"/></td>
+                             </tr>                            
+                             <tr>
+                                 <td>NOMBRES</td><td><input type="text" name="nombres" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+							 <tr>
+                                 <td>APELLIDOS</td><td><input type="text" name="apellidos" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+                              <tr>
+                                  <td>TIPO DE DOCUMENTO&nbsp&nbsp<input type="radio" name="tipo_documento" value="EX"/>EX<input type="radio" name="tipo_documento" value="CC"/>CD&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNUMERO DOC</td><td><input type="text" name="documento" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+                             <tr>
+                                  <td>DIRECCION</td><td><input type="text" name="direccion" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+							 <tr>
+                                  <td>TELEFONO</td><td><input type="text" name="telefono" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+                             <tr>
+                                 <td>ESTADO CIVIL</td><td><input type="text" name="estado_civil" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+                             <tr>
+                                 <td>EPS</td><td><input type="text" name="EPS" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+                             <tr>
+                                 <td>CAJA DE COMPENSANCION</td><td><input type="text" name="caja_compensacion" size="45" required placeholder="digite el dato"/></td>
+                             </tr>                           
+                             <tr>
+                                 <td>TITULO</td><td><input type="text" name="titulo" size="45" required placeholder="digite el dato"/>
+						    </tr>
+                             <tr> 								 
+								 <td>CODIGO CARGO</td><td><input type="text" name="cod_cargo" size="45"/></td>
+                             </tr>
+                             <tr>
+                                 <td>COD CURSO</td><td><input type="text" name="cod_curso" size="45" ></td>
+                             <tr>
+                                 <td colspan="20">
+								 <center><button type="submit"><img src="/michelin/imagenes/a.png" width="42" height="42" style="vertical-align:middle"/>ENVIAR</button>
+								 <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle"/>LIMPIAR</button></center>
+							 </td>
+							 </tr>							
+	                 </table></center>
+			 </form> 
+
+             </td>
+			 <td>
+			 
+			 <form method="POST" action="/michelin/php/empleados/modificar_empleados.php">
+			  
+			          <center><table border="2" cellpadding="0" cellspacing="0" width="90%" bgcolor="#4A9BEC ">
+                             <tr>
+                                 <td colspan="2"><center><h3>MODIFICAR</h3></center></td>
+                             </tr>
+                             <tr>
+                                 <td>CODIGO DE EMPLEADO</td><td><input type="text" name="cod_emp" size="45" required placeholder="digite el dato"/></td>
+                             </tr>                            
+                             <tr>
+                                 <td>NOMBRES</td><td><input type="text" name="nombres" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+							 <tr>
+                                 <td>APELLIDOS</td><td><input type="text" name="apellidos" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+                              <tr>
+                                  <td>TIPO DE DOCUMENTO&nbsp&nbsp<input type="radio" name="tipo_documento" value="EX"/>EX<input type="radio" name="tipo_documento" value="CC"/>CD&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNUMERO DOC</td><td><input type="text" name="documento" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+                             <tr>
+                                  <td>DIRECCION</td><td><input type="text" name="direccion" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+							 <tr>
+                                  <td>TELEFONO</td><td><input type="text" name="telefono" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+                             <tr>
+                                 <td>ESTADO CIVIL</td><td><input type="text" name="estado_civil" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+                             <tr>
+                                 <td>EPS</td><td><input type="text" name="EPS" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+                             <tr>
+                                 <td>CAJA DE COMPENSANCION</td><td><input type="text" name="caja_compensacion" size="45" required placeholder="digite el dato"/></td>
+                             </tr>                           
+                             <tr>
+                                 <td>TITULO</td><td><input type="text" name="titulo" size="45" required placeholder="digite el dato"/>
+						    </tr>
+                             <tr> 								 
+								 <td>CODIGO CARGO</td><td><input type="text" name="cod_cargo" size="45" required placeholder="digite el dato"/></td>
+                             </tr>
+                             <tr>
+                                 <td>COD CURSO</td><td><input type="text" name="cod_curso" size="45" required placeholder="digite el dato"/></td>
+                             <tr>
+                                 <td colspan="20">
+								<center>	<button type="submit"><img src="/michelin/imagenes/e.png" width="42" height="42" style="vertical-align:middle"/>MODIFICAR</button>
+								 <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle"/>LIMPIAR</button></center>
+							 </td>
+							 </tr>							
+	                 </table></center>
+			 </form>
+
+             </td></tr></table>			 
+                                                 
+      <center><button type="submit" onclick='history.go(-1);'><img src="/michelin/imagenes/c.png" width="42" height="42" style="vertical-align:middle">ATRAS</button></center>	
+</div>
+</body>
+</html>

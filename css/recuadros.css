@@ -1,0 +1,45 @@
+#recuadro1{
+  box-shadow: 30px 30px 30px rgba(255,0,0,0.5); 
+  border-radius: 20px;  
+  background-color:#ddd;
+  width:200px;
+  padding:10px;
+}
+#recuadro2{
+  box-shadow: 30px 30px 30px rgba(255,0,0,0.5); 
+  border-radius: 20px;  
+  background-color:#ddd;
+  width:200px;
+  padding:10px;
+}
+
+#recuadro3{
+  box-shadow: 30px 30px 30px rgba(255,0,0,0.5); 
+  border-radius: 20px;  
+  background-color:#ddd;
+  width:200px;
+  padding:10px;
+}
+
+#recuadro4{
+  box-shadow: 30px 30px 30px rgba(255,0,0,0.5); 
+  border-radius: 20px;  
+  background-color:#ddd;
+  width:200px;
+  padding:10px;
+}
+
+#recuadro5{
+  box-shadow: inset 0px 0px 40px #f00,
+                    0px 0px 40px #ff0; 
+  border-radius: 20px;  
+  background-color:#ddd;
+  width:1000px;
+  padding:10px;
+}
+
+
+
+
+
+

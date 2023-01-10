@@ -1,0 +1,145 @@
+<html>
+<head>
+<link type="text/css" href="/michelin/css/administrativo.css" rel="stylesheet"/>
+     <meta charset="UTF-8">
+<title>ESTUDIANTES</title>
+</head>
+<body>
+
+<div id="estudiantes">
+
+<br/><center><img src="/michelin/imagenes/estudiantes.png"/></center><br/><br/>
+
+              <center><table width="100%"><tr><td>
+			  
+			  <form method="POST" action="/michelin/php/estudiantes/registrar_estudiantes.php">
+           <center><table border="2" cellpadding="0" cellspacing="0" width="90%" bgcolor="#F3AC95">
+                          <tr>
+                              <td colspan="2"><center><h3>INGRESAR REGISTRO ALUMNOS</h3></center></td>
+                          </tr>
+                          <tr>
+                              <td></td><td><input type="text" name="cod_est" size="45" style="display:none"/></td>
+                          </tr>                         
+                          <tr>
+                              <td>NOMBRES</td><td><input type="text" name="nombres" size="45" required placeholder="digite el dato"/></td>
+                          </tr>
+                          <tr>
+                               <td>APELLIDOS</td><td><input type="text" name="apellidos" size="45" required placeholder="digite el dato"/></td>
+                           </tr>
+                           <tr>
+                               <td>TIPO DOCUMENTO&nbsp&nbsp<input type="radio" name="tipo_documento" value="RC"/>RC<input type="radio" name="tipo_documento" value="TI"/>TI&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNUMERO DOC</td><td><input type="text" name="documento" size="45" required placeholder="digite el dato"></td>
+                          </tr>                         
+                           <tr>
+                              <td>NOMBRES ACUDIENTE</td><td><input type="text" name="nombre_acudiente" size="45" required placeholder="digite el dato"/></td>
+                           </tr>
+						   <tr>
+						      <td>APELLIDOS ACUDIENTE</td><td><input type="text" name="apellido_acudiente" size="45" required placeholder="digite el dato"/></td>
+						   </tr>
+                           <tr>
+                              <td>DOCUMENTO</td><td><input type="text" name="doc_acudiente" size="45" required placeholder="digite el dato"/></td>
+                           </tr>
+                           <tr>
+                               <td>DIRECCION</td><td><input type="text" name="direccion" size="45" required placeholder="digite el dato"/></td>
+						   </tr>
+						   <tr>
+							   <td>TELEFONO FIJO</td><td><input type="text" name="telefono" size="45" required placeholder="digite el dato"/></td>
+                           </tr>
+                           <tr>
+                               <td>CELULAR</td><td><input type="text" name="celular" size="45"/ required placeholder="digite el dato"></td>
+							</tr>
+							<tr>
+							   <td>EMAIL</td><td><input type="text" name="email" size="45"/ required placeholder="digite el dato"></td>
+                           </tr>
+						    <tr>
+                               <td>ULTIMO GRADO</td><td><input type="text" name="ultimo_grado_cursado" size="45" required placeholder="digite el dato"/></td>
+                           </tr>
+                           <tr>
+                              <td>INSTITUCION</td><td><input type="text" name="institucion" size="45" required placeholder="digite el dato"/></td>
+                            </tr>
+                            <tr>
+                                 <td>EPS</td><td><input type="text" name="eps" size="45" required placeholder="digite el dato"/></td>
+							</tr>
+							<tr>
+							    <td>VACUNAS</td><td><input type="text" name="vacunas" size="45" required placeholder="digite el dato"/></td>
+                            </tr>
+                            <tr>
+                                <td>COD CURSO</td><td><input type="text" name="cod_curso" size="45" required placeholder="digite el dato"/></td>
+                           </tr>
+                            <tr>
+                                <td colspan="20">								
+								<center><button type="submit"><img src="/michelin/imagenes/a.png" width="42" height="42" style="vertical-align:middle"/>ENVIAR</button>
+								 <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle"/>LIMPIAR</button></center>
+                                 </td>
+						   </tr>
+           </table></center>
+                 </form>
+				 </td>
+				 <td>
+				 
+				  <form method="POST" action="/michelin/php/estudiantes/modificar_estudiantes.php">
+           <center><table border="2" cellpadding="0" cellspacing="0" width="90%" bgcolor="#F3AC95">
+                          <tr>
+                              <td colspan="2"><center><h3>MODIFICAR</h3></center></td>
+                          </tr>
+                          <tr>
+                              <td>COD ESTUDIANTE</td><td><input type="text" name="cod_est" size="45" required placeholder="digite el dato"/></td>
+                          </tr>                         
+                          <tr>
+                              <td>NOMBRES</td><td><input type="text" name="nombres" size="45" required placeholder="digite el dato"/></td>
+                          </tr>
+                          <tr>
+                               <td>APELLIDOS</td><td><input type="text" name="apellidos" size="45" required placeholder="digite el dato"/></td>
+                           </tr>
+                           <tr>
+                               <td>TIPO DOCUMENTO&nbsp&nbsp<input type="radio" name="tipo_documento" value="RC"/>RC<input type="radio" name="tipo_documento" value="TI"/>TI&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNUMERO DOC</td><td><input type="text" name="documento" size="45" required placeholder="digite el dato"></td>
+                          </tr>                         
+                           <tr>
+                              <td>NOMBRES ACUDIENTE</td><td><input type="text" name="nombre_acudiente" size="45" required placeholder="digite el dato"/></td>
+                           </tr>
+						   <tr>
+						      <td>APELLIDOS ACUDIENTE</td><td><input type="text" name="apellido_acudiente" size="45" required placeholder="digite el dato"/></td>
+						   </tr>
+                           <tr>
+                              <td>DOCUMENTO ACUDIENTE</td><td><input type="text" name="doc_acudiente" size="45" required placeholder="digite el dato"/></td>
+                           </tr>
+                           <tr>
+                               <td>DIRECCION</td><td><input type="text" name="direccion" size="45" required placeholder="digite el dato"/></td>
+						   </tr>
+						   <tr>
+							   <td>TELEFONO FIJO</td><td><input type="text" name="telefono" size="45" required placeholder="digite el dato"/></td>
+                           </tr>
+                           <tr>
+                               <td>CELULAR</td><td><input type="text" name="celular" size="45"/ required placeholder="digite el dato"></td>
+							</tr>
+							<tr>
+							   <td>EMAIL</td><td><input type="text" name="email" size="45"/ required placeholder="digite el dato"></td>
+                           </tr>
+						    <tr>
+                               <td>ULTIMO GRADO</td><td><input type="text" name="ultimo_grado_cursado" size="45" required placeholder="digite el dato"/></td>
+                           </tr>
+                           <tr>
+                              <td>INSTITUCION</td><td><input type="text" name="institucion" size="45" required placeholder="digite el dato"/></td>
+                            </tr>
+                            <tr>
+                                 <td>EPS</td><td><input type="text" name="eps" size="45" required placeholder="digite el dato"/></td>
+							</tr>
+							<tr>
+							    <td>VACUNAS</td><td><input type="text" name="vacunas" size="45" required placeholder="digite el dato"/></td>
+                            </tr>
+                            <tr>
+                                <td>COD CURSO</td><td><input type="text" name="cod_curso" size="45" required placeholder="digite el dato"/></td>
+                           </tr>
+                            <tr>
+                                <td colspan="20">								
+								<center>	<button type="submit"><img src="/michelin/imagenes/e.png" width="42" height="42" style="vertical-align:middle"/>MODIFICAR</button>
+								 <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle"/>LIMPIAR</button></center>
+                                 </td>
+						   </tr>
+           </table></center>
+                 </form>
+				 </td></tr></table></center>
+                                          
+      <center><button type="submit" onclick='history.go(-1);'><img src="/michelin/imagenes/c.png" width="42" height="42" style="vertical-align:middle">ATRAS</button></center>	
+</div>
+</body>
+</html>

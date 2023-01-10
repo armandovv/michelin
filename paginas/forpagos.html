@@ -1,0 +1,74 @@
+<html>
+<head>
+<link type="text/css" href="/michelin/css/administrativo.css" rel="stylesheet"/>
+     <meta charset="UTF-8">
+<title>ESTUDIANTES</title>
+</head>
+<body>
+
+<div id="pagos">
+
+<br/><center><img src="/michelin/imagenes/pagos.png"/></center><br/><br/>
+
+              <center><table width="100%"><tr><td>
+
+              <form method="POST" action="/michelin/php/pagos/registrar_pagos.php">
+           		<center><table border="2" cellpadding="0" cellspacing="0" width="80%" bgcolor="#F8BDEE ">
+                          <tr>
+                               <td colspan="2"><center><h3>REGISTRAR PAGOS</h3></center></td>
+                          </tr>
+                          <tr>
+                               <td></td><td><input type="text" name="cod_pagos" style="display:none" /></td>
+                          </tr>                     
+                          <tr>
+                              <td>COD ESTUDIANTE</td><td ><input type="text" name="cod_est"/></td>
+                          </tr>						  
+                          <tr>
+                               <td>DESCRIPCION</td><td><textarea name="descripcion" cols="40" rows="5" required placeholder="digite el dato"/></textarea></td>
+                          </tr>
+                          <tr>
+                              <td>VALOR</td><td><input type="text" name="valor" required placeholder="digite el dato"/></td>
+                          </tr>
+                          <tr>
+                              <td colspan="10" rowspan="5">
+							  <center><button type="submit"><img src="/michelin/imagenes/a.png" width="42" height="42" style="vertical-align:middle"/>ENVIAR</button>
+								 <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle"/>LIMPIAR</button></center>							
+							  </td>
+                          </tr>
+               </table></center>
+             </form>	
+			 
+             </td>
+			 <td>
+
+			 <form method="POST" action="/michelin/php/pagos/modificar_pagos.php">
+           		<center><table border="2" cellpadding="0" cellspacing="0" width="80%" bgcolor="#F8BDEE ">
+                          <tr>
+                               <td colspan="2"><center><h3>MODIFICAR</h3></center></td>
+                          </tr>
+                          <tr>
+                               <td>CODIGO PAGO</td><td><input type="text" name="cod_pagos" required placeholder="digite el dato" /></td>
+                          </tr>                     
+                          <tr>
+                              <td>CODIGO ESTUDIANTE</td><td ><input type="text" name="cod_est" required placeholder="digite el dato"/></td>
+                          </tr>						  
+                          <tr>
+                               <td>DESCRIPCION</td><td><textarea name="descripcion" cols="40" rows="5" required placeholder="digite el dato"/></textarea></td>
+                          </tr>
+                          <tr>
+                              <td>VALOR</td><td><input type="text" name="valor" required placeholder="digite el dato"/></td>
+                          </tr>
+                          <tr>
+                              <td colspan="10" rowspan="5">
+							  <center>	<button type="submit"><img src="/michelin/imagenes/e.png" width="42" height="42" style="vertical-align:middle"/>MODIFICAR</button>
+								 <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle"/>LIMPIAR</button></center>							
+							  </td>
+                          </tr>
+               </table></center>
+             </form>	
+             </td></tr></table></center>			 
+								                                                                        
+      <center><button type="submit" onclick='history.go(-1);'><img src="/michelin/imagenes/c.png" width="42" height="42" style="vertical-align:middle">ATRAS</button></center>	
+</div>
+</body>
+</html>

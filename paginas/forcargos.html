@@ -1,0 +1,71 @@
+<html>
+<head>
+<link type="text/css" href="/michelin/css/administrativo.css" rel="stylesheet"/>
+     <meta charset="UTF-8">
+<title>ESTUDIANTES</title>
+</head>
+<body>
+
+<div id="cargos">
+
+<br/><center><img src="/michelin/imagenes/cargos.png"/></center><br/><br/>
+
+              
+			  <center><table width="100%"><tr><td>
+			  <form method="POST" action="/michelin/php/cargos/registrar_cargos.php">
+           		<center><table border="2" cellpadding="0" cellspacing="0" width="70%" bgcolor="#DFE12E">
+                          <tr>
+                               <td colspan="2"><center><h3>REGISTRAR DATOS CARGOS</h3></center></td>
+                          </tr>
+                          <tr>
+                               <td></td><td><input type="text" name="cod_cargo" style="display:none" /></td>
+                          </tr>                     
+                          <tr>
+                              <td>NOMBRE CARGO</td><td ><input type="text" name="nombre" required placeholder="digite el dato"/></td>
+                          </tr>
+                          <tr>
+                               <td>DESCRIPCION</td><td><textarea name="descripcion" cols="40" rows="5" required placeholder="digite el dato"/></textarea></td>
+                          </tr>
+                          <tr>
+                              <td>SALARIO</td><td><input type="text" name="salario" required placeholder="digite el dato"/></td>
+                          </tr>
+                          <tr>
+                              <td colspan="10" rowspan="5">
+							  <center><button type="submit"><img src="/michelin/imagenes/a.png" width="42" height="42" style="vertical-align:middle"/>ENVIAR</button>
+								 <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle"/>LIMPIAR</button></center>							
+							  </td>
+                          </tr>
+               </table></center>
+             </form>
+               
+              </td>
+              <td>
+			  
+			  <form method="POST" action="/michelin/php/cargos/modificar_cargos.php">
+           		<center><table border="2" cellpadding="0" cellspacing="0" width="70%" bgcolor="#DFE12E">
+                          <tr>
+                               <td colspan="2"><center><h3>MODIFICAR</h3></center></td>
+                          </tr>
+                          <tr>
+                               <td>CODIGO CARGO</td><td><input type="text" name="cod_cargo" required placeholder="digite el codigo"/></td>
+                          </tr>                                              
+                          <tr>
+                               <td>DESCRIPCION</td><td><textarea name="descripcion" cols="40" rows="5" required placeholder="digite el dato"/></textarea></td>
+                          </tr>
+                          <tr>
+                              <td>SALARIO</td><td><input type="text" name="salario" required placeholder="digite el dato"/></td>
+                          </tr>
+                          <tr>
+                              <td colspan="10" rowspan="5">
+							  <center><button type="submit"><img src="/michelin/imagenes/e.png" width="42" height="42" style="vertical-align:middle"/>MODIFICAR</button>
+								 <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle"/>LIMPIAR</button></center>							
+							  </td>
+                          </tr>
+               </table></center>
+             </form>
+              </td></tr></table></center>			  
+								                                                                        
+      <center><button type="submit" onclick='history.go(-1);'><img src="/michelin/imagenes/c.png" width="42" height="42" style="vertical-align:middle">ATRAS</button></center>	
+</div>
+</body>
+</html>

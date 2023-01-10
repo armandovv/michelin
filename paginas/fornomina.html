@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>ESTUDIANTES</title>
+
+<link type="text/css" href="/michelin/css/administrativo.css" rel="stylesheet"/>
+     <meta charset="UTF-8">
+
+<script type="text/javascript">
+cargo=0;
+salario=0;
+function calcular(){
+cargo=document.getElementById("cargo").value;
+cargo=parseInt(cargo);
+salario=parseInt(salario);
+ht=document.getElementById("ht").value;
+ht=parseInt(ht);
+vht=document.getElementById("vht").value;
+vht=parseFloat(vht);
+eps=document.getElementById("eps").value;
+eps=parseFloat(eps);
+caja=document.getElementById("caja").value;
+caja=parseFloat(caja);
+pension=document.getElementById("pension").value;
+pension=parseFloat(pension);
+neto=document.getElementById("neto").value;
+neto=parseFloat(neto);
+switch (cargo){
+case 1:
+(salario)= 1800000;
+break;
+case 2:
+(salario)= 1950000;
+break;
+case 3:
+(salario)= 900000;
+break;
+default: alert("no esta en el sistema");
+}
+document.getElementById("vht").value= (salario)/240;
+document.getElementById("eps").value= (parseInt(document.getElementById("ht").value * ((salario)/240)))* 4/100;
+document.getElementById("caja").value= (parseInt(document.getElementById("ht").value* ((salario)/240)))* 4/100;
+document.getElementById("pension").value= (parseInt(document.getElementById("ht").value* ((salario)/240)))* 4/100;
+document.getElementById("neto").value= (parseInt(document.getElementById("ht").value * ((salario)/240)))- (parseInt(document.getElementById("ht").value* ((salario)/240)*12/100));
+}
+</script>
+</head>
+<body>
+
+<div id="nomina">
+
+<br/><center><img src="/michelin/imagenes/nomina.png"/></center><br/><br/>
+
+              <table width="100%"><tr><td>
+              <form method="POST" action="/michelin/php/nomina/registrar_nomina.php">
+           		<center><table border="2" cellpadding="0" cellspacing="0" width="80%" bgcolor="#F6D990">
+                          <tr>
+                               <td colspan="2"><center><h3>REGISTRAR DATOS</h3></center></td>
+                          </tr>
+                          <tr>
+                               <td></td><td><input type="text" name="cod_nomina" style="display:none" /></td>
+                          </tr>                     
+                          <tr>
+                              <td>COD EMPLEADO</td><td ><input type="text" name="cod_emp" required placeholder="digite el dato"/></td>
+                          </tr>                       
+                          <tr>
+                              <td>COD CARGO</td><td><input type="text" name="cod_cargo" required placeholder="digite el dato"/></td>
+                          </tr>
+						  <tr>
+                              <td>HORAS EXTRAS TRABAJADAS</td><td><input type="text" name="horas_trabajadas" required placeholder="digite el dato"/></td>
+                          </tr>
+						  <tr>
+                              <td>VALOR HORAS</td><td><input type="text" name="valor_horas_trabajadas" required placeholder="digite el dato"/></td>
+                          </tr>
+						  <tr>
+                              <td>DESCUENTOS</td><td><input type="text" name="descuento" required placeholder="digite el dato"/></td>
+                          </tr>
+						  <tr>
+                              <td>EPS</td><td><input type="text" name="aporte_eps" required placeholder="digite el dato"/></td>
+                          </tr>
+						  <tr>
+                              <td>CAJA</td><td><input type="text" name="aporte_caja" required placeholder="digite el dato"/></td>
+                          </tr>
+						  <tr>
+                              <td>PENSION</td><td><input type="text" name="aporte_pension" required placeholder="digite el dato"/></td>
+                          </tr>
+						  <tr>
+                              <td>TOTAL PAGAR</td><td><input type="text" name="neto_a_pagar" required placeholder="digite el dato"/></td>
+                          </tr>						  
+                          <tr>
+                              <td colspan="10" rowspan="5">
+							  <center><button type="submit"><img src="/michelin/imagenes/a.png" width="42" height="42" style="vertical-align:middle"/>ENVIAR</button>
+								 <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle"/>LIMPIAR</button></center>							
+							  </td>
+                          </tr>
+               </table></center>
+             </form>
+			 </td>
+			 <td>
+			 
+			  <form method="POST" action="/michelin/php/nomina/modificar_nomina.php">	
+			     <table width="50%" border="1" bgcolor="#F6D990" align="center">                  			
+                       <tr>
+                            <td colspan="2"><center><h3>MODIFICAR</h3></center></td>
+					   </tr>
+					   <tr>					   
+                           <td>CODIGO EMPLEADO</td><td><input type="text" name="cod_emp" required placeholder="digite codigo empleado"/></td>
+                       </tr>
+					   <tr>
+                            <td>CODIGO NOMINA</td><td><input type="text" name="cod_nomina" required placeholder="digite codigo nomina"/></td>
+                       </tr>  
+                       <tr>
+                            <td>HORAS EXTRAS LABORADAS</td><td><input type="text" name="horas_trabajadas" required placeholder="digite las horas"/></td>
+                       </tr>  
+                       <tr>
+                            <td>DESCUENTOS</td><td><input type="text" name="descuento" required placeholder="digite las horas"/></td>
+                       </tr>  
+   					   <tr>
+                            <td>EPS</td><td><input type="text" name="aporte_eps" required placeholder="digite las horas"/></td>
+                       </tr> 
+					   <tr>
+                            <td>CAJA</td><td><input type="text" name="aporte_caja" required placeholder="digite las horas"/></td>
+                       </tr> 
+					   <tr>
+                            <td>PENSION</td><td><input type="text" name="aporte_pension" required placeholder="digite las horas"/></td>
+                       </tr> 
+                       <tr>
+					       <td colspan="10" rowspan="5">
+						   <center>	<button type="submit"><img src="/michelin/imagenes/e.png" width="42" height="42" style="vertical-align:middle"/>MODIFICAR</button>
+						   <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle"/>LIMPIAR</button></center>
+						   </td>
+                       </tr>
+					   </table>
+                   </form>       
+            </td></tr></table>		 
+								                                                                        
+      <center><button type="submit" onclick='history.go(-1);'><img src="/michelin/imagenes/c.png" width="42" height="42" style="vertical-align:middle">ATRAS</button></center>	
+</div>
+</body>
+</html>

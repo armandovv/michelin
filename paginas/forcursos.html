@@ -1,0 +1,85 @@
+<html>
+<head>
+
+<title>Reporte</title>
+<link type="text/css" href="/michelin/css/administrativo.css" rel="stylesheet"/>
+     <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <div id="cursos">
+          
+		  <center><br/><br/><br/><img src="/michelin/imagenes/cursos.png" width="90%" height="120"/><br/><br/><br/>	</center>
+             <table width="100%"><tr><td>		  
+             <form method="POST" action="/michelin/php/cursos/registrar_cursos.php">                  
+                    <center><table border="2" cellpadding="0" cellspacing="0" width="80%" bgcolor="#ABADAF ">
+                          <tr>
+                              <td colspan="2"><center><h3>REGISTRAR CURSOS</h3></center></td>
+                          </tr>
+                          <tr>
+                              <td></td><td><input type="text" name="cod_curso" style="display:none"/></td>
+                          </tr>
+                          <tr>
+                              <td>CURSO</td><td><select type="text" name="curso" size="1" multiple required placeholder="seleccione curso">
+                                           <option value="">...</option>
+                                            <option value="Parvulos">Parvulos</option>
+                                              <option value="Transicion">Transicion</option>
+                                                <option value="Pre Jardin">Pre Jardin</option>
+                                                 <option value="Jardin">Jardin</option>
+                                                   <option value="Primero">Primero</option>                                         
+                                            </select></td>
+                          </tr>
+                          <tr>
+                              <td>DESCRIPCION</td><td><textarea name="descripcion" cols="40" rows="5" placeholder="describe curso" required placeholder="digite el dato"/></textarea></td>
+                          </tr>
+                          <tr>
+                              <td>COD DOCENTE</td><td><input type="text" name="cod_emp"/></td>
+                          </tr>
+                          <tr>
+                              <td>NUM ESTUDIANTES</td><td><input type="text" name="n_estudiantes"/></td>
+                          </tr>
+                          <tr>                                
+						      <td colspan="10" rowspan="5">
+								  <center> <button type="submit"><img src="/michelin/imagenes/a.png" width="42" height="42" style="vertical-align:middle">ENVIAR</button>
+	                              <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle">LIMPIAR</button></center>
+							  </td>
+                          </tr>
+                   </table></center>
+			  </form>
+			  
+             </td>
+			 <td>
+			 
+               <form method="POST" action="/michelin/php/cursos/modificar_cursos.php">                  
+                    <center><table border="2" cellpadding="0" cellspacing="0" width="80%" bgcolor="#ABADAF ">
+                          <tr>
+                              <td colspan="2"><center><h3>MODIFICAR</h3></center></td>
+                          </tr>
+                          <tr>
+                              <td>CODIGO CURSO</td><td><input type="text" name="cod_curso" multiple required placeholder="digite codigo curso"/></td>
+                          </tr>                         
+                          <tr>
+                              <td>DESCRIPCION</td><td><textarea name="descripcion" cols="40" rows="5" placeholder="describe curso" /></textarea></td>
+                          </tr>
+                          
+                          <tr>
+                              <td>NUM ESTUDIANTES</td><td><input type="text" name="n_estudiantes" required placeholder="digite la cantidad"/></td>
+                          </tr>
+                          <tr>                                
+						      <td colspan="10" rowspan="5">
+								  <center><button type="submit"><img src="/michelin/imagenes/e.png" width="42" height="42" style="vertical-align:middle"/>MODIFICAR</button>
+	                              <button type="reset"><img src="/michelin/imagenes/b.png" width="50" height="42" style="vertical-align:middle">LIMPIAR</button></center>
+							  </td>
+                          </tr>
+                   </table>
+			</form></center>
+           </td></tr></table>				
+              
+			  
+<center><button type="submit" onclick='history.go(-1);'><img src="/michelin/imagenes/c.png" width="42" height="42" style="vertical-align:middle">ATRAS</button></center>
+     </div>
+</body>
+</html>
+
+            

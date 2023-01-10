@@ -1,0 +1,136 @@
+#administrativo{
+	background-image:url("/michelin/imagenes/fondoadm.jpg");
+	background-repeat:no-repeat;
+	 background-size: 100%;
+	position:relative;
+  width:100%;    
+}
+
+#ingresar{
+	background-image:url("/michelin/imagenes/nosotros.jpg");
+	background-repeat:no-repeat;
+	 background-size: 100%;
+	position:relative;
+ position:relative;
+  width:100%;
+height:110%;  
+}
+
+#contactenos{
+	background-image:url("/michelin/imagenes/fondo1.jpg");
+		background-repeat:no-repeat;
+		background-size: 100%;
+height:100%;		
+}
+
+#contactenosform {
+  width:600px; 
+  height:50%;
+  margin-left:20px; 
+  margin-top:10px;
+  background-color:#47D3F5;
+  border:1px solid;
+  padding:10px 0 10px 0;
+  border-radius:20px;
+}
+
+#contactenosform form label {
+  width:130px; 
+  float:left;
+  font-family:verdana;
+  font-size:14px;
+  
+}
+
+#reporte{
+	background-image:url("/michelin/imagenes/dandelion.jpg");
+	background-repeat:no-repeat;
+	 background-size: 100%;
+	position:relative;
+ position:relative;
+  width:100%;  
+height:100%;
+}
+
+#estudiantes{
+	background-image:url("/michelin/imagenes/estudiantes.jpg");
+	background-repeat:no-repeat;
+	 background-size: 100%;
+	position:relative;
+ position:relative;
+  width:100%;
+height:100%;  
+}
+
+#cargos{
+	background-image:url("/michelin/imagenes/fondocargos.jpg");
+	background-repeat:no-repeat;
+	 background-size: 100%;
+	position:relative;
+ position:relative;
+  width:100%;
+height:100%;  
+}
+
+#empleados{
+	background-image:url("/michelin/imagenes/fondoempleados.jpg");
+	background-repeat:no-repeat;
+	 background-size: 100%;
+	position:relative;
+ position:relative;
+  width:100%;
+height:100%;  
+}
+
+#cursos{
+	background-image:url("/michelin/imagenes/fondocursos.jpg");
+	background-repeat:no-repeat;
+	 background-size: 100%;
+	position:relative;
+ position:relative;
+  width:100%;
+height:100%;  
+}
+
+#nomina{
+	background-image:url("/michelin/imagenes/fondonomina.jpg");
+	background-repeat:no-repeat;
+	 background-size: 100%;
+	position:relative;
+ position:relative;
+  width:100%;
+height:100%;  
+}
+
+#pagos{
+	background-image:url("/michelin/imagenes/fondopagos.jpg");
+	background-repeat:no-repeat;
+	 background-size: 100%;
+	position:relative;
+ position:relative;
+  width:100%;
+height:100%;  
+}
+
+#consultaest{
+	background-image:url("/michelin/imagenes/arcoiris.jpg");
+	background-repeat:no-repeat;
+	 background-size: 100%;
+	position:relative;
+ position:relative;
+  width:100%;
+height:100%;  
+}
+
+#registrar{
+	background-image:url("/michelin/imagenes/cronograma.jpg");
+	background-repeat:no-repeat;
+	 background-size: 100%;
+	position:relative;
+ position:relative;
+  width:100%;
+height:100%;  
+}
+
+
+
